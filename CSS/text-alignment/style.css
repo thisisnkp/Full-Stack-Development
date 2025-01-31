@@ -1,0 +1,53 @@
+/* 
+Texts in CSS
+----------------------------
+1] Text Alignment
+alignment will be worlk only with block element
+
+2] Text Decoration: removing underlines
+
+3] Text Tranformation: To transform text in uppercase, lowercase, or title
+
+4] Text spacing
+*/
+.text-align{
+    text-align:center;  
+    /* right, left, center, justify*/
+}
+a{
+    /* text-decoration: none;  */
+    /*none, line-though, overline, underline*/
+    /* color: chocolate; */
+
+    /* Child of Text Decoration */
+    text-decoration-color: rgb(255, 106, 0);
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    /* Dotted, dashed, wavy, solid */
+    text-decoration-thickness: 1px;
+    /* Thickness of line */
+}
+
+.text-tranform{
+    text-transform: lowercase; 
+    /* capitalize, lowercase, uppercase */
+}
+
+.spacing{
+    /* Text spacing */
+    /* word spacing */
+    /* word-spacing: 1rem; */
+
+    /* Letter Spacing */
+    /* letter-spacing: 1em; */
+
+    /* line height */
+    line-height: 2em;
+}
+
+.text-shadow{
+    /* 
+    text-shadow: h-shift(offset), v-shift(offset), blur, color
+    */
+    text-shadow: -7px -12px 1px #170000;
+}

@@ -1,0 +1,39 @@
+/* 
+Backgrounds: 
+keyword: background:
+                    color
+                    image
+                    size
+                    repeat/no-repeat
+
+.[single dot]: same directory
+..[Double Dot]: return directory
+
+background: parent keyword
+childs:- 
+    background-color,
+    background-position: center, left, right, top, bottom
+    background-image: url("img")
+    background-size: cover/contain
+    background-repeat: repeat, no-repeat
+*/
+
+
+.bg-color{
+    background: #8f5;
+}
+
+.bg-img{
+    /* background: url("./lord-shiva.jpg") no-repeat center/cover; */
+                /* img    Stop to repeat   position/size*/
+    height: 100vh;
+    width: 100vw;
+    /* background-size: 200px; */
+
+    /* Childs */
+    background-color: red;
+    background-image: url("./lord-shiva.jpg");
+    background-position: center;
+    background-size: 200px;
+    background-repeat: no-repeat;
+}

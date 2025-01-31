@@ -1,0 +1,70 @@
+/* 
+Fonts in css
+There are 5 types of fonts ion css @mainly
+
+1] serif: font with notches
+
+2] san-serif: normal font without notches
+
+3]  Monospace: font with extra space
+
+4] cursive: styled font
+
+5] fantasy
+
+Alternate
+6] System
+
+*/
+@font-face {
+    font-family: "neeraj";
+    src: url("font/nk.otf");
+}
+.font-serif{
+    font-family: serif;
+}
+
+.font-sansSerif{
+    font-family: sans-serif;
+}
+
+.font-monospace{
+    font-family: monospace;
+}
+
+.font-cursive{
+    font-family: cursive;
+}
+
+.font-fantasy{
+    font-family: fantasy;
+}
+.font-systeme{
+    font-family: system;
+}
+
+/* 
+font Keyword
+1] font-size: for giving font size
+2] font-style: for styling the font
+3] font-family: for choosing font type
+4] @font-face: For adding fonts other than system. Need to starting of css
+5] font-varient
+6] font-weight:- 
+*/
+html{
+    font-size: 10px;
+}
+.font-serif{
+    font-size: 2rem;
+    /* 
+    font-style: italic, oblique, normal
+    font-variant: small-caps
+    font-weight: 100-900 with complete numbers, bold, bolder
+    */
+    font-style: normal;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: "neeraj";
+    font-variant: small-caps;
+    font-weight: 900;
+}

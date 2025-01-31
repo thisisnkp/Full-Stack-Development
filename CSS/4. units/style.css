@@ -1,0 +1,30 @@
+/* 
+Fixed Sizes
+px (Pexel):-  1 dot of your screen
+pt (Point):- 1pt 1/72 inch
+in (inch):- 1inch = 2.54 cm
+cm       :- 1cm
+
+Relative sizes
+rem (Relative to root font): It adjust its size according to root element ie HTML
+rem Calculation: size of html x rem value
+                    16px         3 = 32px
+
+em (Relative to parent): size of parent x em value
+        14 x 1 = 14                   
+
+
+%:- 100% = default size / given size of element
+            14px (DS) = 100%
+*/
+
+.units{
+    /* font-size: 3rem; */
+    font-size: 50%;
+}
+body{
+    font-size: 14px;
+}
+.em{
+    font-size: 3em;
+}

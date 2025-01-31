@@ -1,0 +1,42 @@
+/* 
+Borders in CSS
+1] border: thikness style color;
+            Thikness: px,em,%,in,cm,rem
+            style: solid, dashed, groove, ridge, inset, outset, double
+   * Childs
+        border-top
+        
+        border-buttom
+        
+        border-left
+        
+        border-right
+        
+        //You can not add multiple properties in following
+        border-color
+        border-style
+        border-width
+*/
+
+.border-div{
+    /* border-right: 1px solid rgb(0, 48, 191);
+    border-top: 1px solid rgb(184, 67, 27);
+    border-left: 2px solid rgb(143, 191, 0);
+    border-bottom: 5px solid rgb(207, 4, 27); */
+
+    /* border: 3px solid rgb(116, 85, 167); */
+    border-width: 3px;
+    border-style: solid;
+    border-color: rgb(116, 85, 167);
+    text-align: center;
+}
+.border{
+    border: 2px solid black;
+}
+.border{
+    border-color: aqua;
+    border: none;
+}
+.border{
+    border-top: 2px ;
+}
