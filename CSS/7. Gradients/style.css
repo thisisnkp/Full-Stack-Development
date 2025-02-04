@@ -44,5 +44,26 @@ linear-gradient(direction(optional)/angle, color1, color2, color3, ...);
     border-radius: 50%;
     justify-content: center;
     align-items: center;
-    background-image: radial-gradient(red, yellow)
+    background-image: radial-gradient(circle,
+                                     red 10%,
+                                      yellow 20%,
+                                      green 30%,
+                                      blue 40%
+                                      );
+}
+.circle3{
+    display: flex;
+    /* border: 1px solid rgb(148, 26, 255); */
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    background-image: radial-gradient(circle,
+                                     rgba(255, 255, 255, 0.8) 10%,
+                                        rgba(25, 25, 215, 0.6) 20%,
+                                        rgba(25, 25, 215, 0.4) 30%,
+                                        rgba(25, 25, 215, 0.2) 10%,
+                                        purple 40%
+                                      );
 }
