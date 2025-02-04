@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+div{
+    /* border: 1px solid pink; */
+    /* padding: 10px; */
+}
+.content{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+/* 
+Gradients in css
+---------------------
+Type pf Gradirents
+1. Linear Gradients
+//Method to use
+linear-gradient(direction(optional)/angle, color1, color2, color3, ...);
+2. Radial Gradients
+3. Repeating Gradients: we can repeat the gradients as property of the gradients like Linear and Radial Gradients;
+
+
+*website for gradients: https://mycolor.space/gradient, 
+*/
+.circle{
+    display: flex;
+    /* border: 1px solid rgb(148, 26, 255); */
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12); 
+}
+
+.circle2{
+    display: flex;
+    /* border: 1px solid rgb(148, 26, 255); */
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    background-image: radial-gradient(red, yellow)
+}
