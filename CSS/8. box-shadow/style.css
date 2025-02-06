@@ -1,0 +1,40 @@
+/* 
+Box Shadow
+box-shadow: h-shadow v-shadow blur spread color inset;
+            x-offset y-offset blur spread color inset;
+    drop-shadow(x y blur spread color);    
+*/          
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffacac;
+    /* box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1); */
+}
+#shadow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    background-color: #dbcece;
+    border-radius: 50%;
+    box-shadow: 20px 40px 20px 40px rgba(209, 28, 28, 0.1);
+}
+
+img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* background-color: #dbcece; */
+    filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.1));
+}
