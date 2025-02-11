@@ -1,0 +1,31 @@
+/* 
+List in css
+    list-style-property // bullet point style
+        1] list-style-type none,disk(default), square, traigle, lower-alpha, lower-roman, upper-alpha, upper-roman, decimal, circle// remove the bullet point
+        2] list-style-position outside(default),inside // bullet point inside the list
+        3] list-style-image // custom image as bullet point
+    
+    combile property
+        list-style: type position image;
+*/
+
+/* 1] list-style-type // remove the bullet point */
+.list{
+    /* list-style-type: decimal; */
+}
+.list > li{
+    border: 1px solid #000;
+    padding: 10px;
+}
+/* 2] list-style-position // bullet point inside the list */
+.list{
+    /* list-style-position: inside; */
+}
+/* 3] list-style-image // custom image as bullet point */
+.list{
+    /* list-style-image: url('img.webp'); */
+}
+
+.list{
+    list-style: square inside url('img.webp');
+}

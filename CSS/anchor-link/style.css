@@ -1,0 +1,24 @@
+/* 
+Anchor link States
+1] :link - a normal, unvisited link
+2] :visited - a link the user has visited
+3] :hover - a link when the user mouses over it
+4] :active - a link the moment it is clicked
+*/
+a:link{
+    color: #00c753;
+    text-decoration: none;
+}
+
+a:visited{
+    color: #f53cff;
+}
+a:hover{
+    color: #ff0000;
+    text-decoration: underline;
+    border: 1px solid #ff0000;
+    padding: 20px;
+}
+a:active{
+    color: #ff00d4;
+}
