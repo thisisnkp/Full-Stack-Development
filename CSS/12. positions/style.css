@@ -1,0 +1,24 @@
+/* 
+Positions in css
+1. Static: default value , element is placed in its original position in the normal flow of the document.
+
+2. Relative: element is positioned relative to its normal position. The element will still be in the normal flow of the document, but it will be offset from its normal position.
+
+3. Absolute: element is positioned relative to its nearest positioned ancestor. If an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling.
+
+4. Fixed: element is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled.
+
+5. Sticky: element is positioned based on the user's scroll position. A sticky element toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed).
+*/
+
+p{
+    border: 1px solid rgb(88, 88, 88);
+    padding: 10px;
+    margin: 10px;
+}
+.static{
+    position: static;
+    top: 100px;
+    left: 100px;
+    height: 200px;
+}
