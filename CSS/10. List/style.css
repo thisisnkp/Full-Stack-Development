@@ -16,6 +16,7 @@ List in css
 .list > li{
     border: 1px solid #000;
     padding: 10px;
+    /* display: none; */
 }
 /* 2] list-style-position // bullet point inside the list */
 .list{
