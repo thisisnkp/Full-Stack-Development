@@ -1,0 +1,44 @@
+/* 
+Display Properties in css
+1. block: block level element takes the full width available and starts on a new line.  Eg: div, h1, p, ul, li
+supports width, height, margin, padding
+2. inline: inline element takes only the necessary width and does not start on a new line. Eg: span, a, img
+supports margin, padding but not width, height
+
+3. inline-block: inline-block element takes only the necessary width and starts on a new line. Eg: input, button
+supports width, height, margin, padding
+
+
+you can not create block element inside inline element but you can create inline element inside block element but it will not take the full width available.
+
+*/
+
+.block{
+    display: block;
+    background-color: red;
+    border: 1px solid black;
+    /* height: 100px;
+    width: 100px; */
+    margin: 10px;
+    padding: 15px;
+}
+.inline{
+    display: inline;
+    background-color: green;
+    border: 1px solid black;
+    margin: 10px;
+    padding: 15px;
+    line-height: 50px;
+    /* height: 100px;
+    width: 100px; */
+}
+
+.inline-block{
+    display: inline-block;
+    background-color: blue;
+    border: 1px solid black;
+    /* height: 100px;
+    width: 100px;
+    margin: 10px;
+    padding: 15px; */
+}

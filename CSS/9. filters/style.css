@@ -1,0 +1,90 @@
+/* 
+Filters are used to modify the rendering of an element.
+Filters: 
+    - blur
+    - brightness
+    - contrast
+    - grayscale
+    - hue-rotate
+    - invert
+    - opacity
+    - saturate
+    - sepia
+    - drop-shadow
+*/
+.content > div{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    flex-direction: column;
+}
+.content div img{
+    width: 300px;
+}
+
+/* Filters */
+/* 
+Blur
+*Value in unit px,inch,cm,mm,em,rem,%;
+*/
+.blur{
+    filter: blur(1px);
+}
+/* 
+Brightness
+*Value is in no unit, it ranges from 0 to 1, 1 is default value. and upper for increasing brightness. add value more than 1;
+*/
+.brightness{
+    filter: brightness(1);
+}
+
+/* 
+contrast
+*/
+
+.contrast{
+    filter: contrast(1);
+}
+
+/* 
+grayscale
+*Value is in no unit, it ranges from 0 to 1, 1 is default value. and upper for increasing grayscale. add value more than 1;
+*/
+.gray-scale{
+    filter: grayscale(1);
+}
+
+.hue-rotate{
+    filter: hue-rotate(270deg);
+}
+
+/* 
+invert: default value from 0 to 1, 1 is default value. and upper for increasing invert. add value more than 1;
+*/
+.invert{
+    filter: invert(1);
+}
+
+/* 
+opacity: default value from 0 to 1, 1 is default value. and upper for increasing opacity. add value more than 1;
+*/
+
+.opacity{
+    filter: opacity(0.1);
+}
+
+/* 
+saturate: default value from 0 to 1, 1 is default value. and upper for increasing saturate. add value more than 1;
+*/
+.saturate{
+    filter: saturate(.1);
+}
+
+/* 
+sepia: default value from 0 to 1, 1 is default value. and upper for increasing sepia. add value more than 1;
+*/
+
+.sepia{
+    filter: sepia(.6);
+}

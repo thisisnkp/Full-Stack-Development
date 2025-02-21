@@ -40,3 +40,15 @@ Borders in CSS
 .border{
     border-top: 2px ;
 }
+.border-1{
+    /* border-top: 2px solid black; 
+    border-bottom: 2px solid red; 
+    border-right: 2px solid rgb(255, 176, 176); 
+    border-left: 2px solid rgb(113, 65, 65);  */
+    /* border: 2px;
+    border-style: dashed;
+    border-color: red; */
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: purple;
+}
