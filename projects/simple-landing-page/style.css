@@ -1,0 +1,53 @@
+/* 
+Styling Body And Creating Default Design
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    font-size: 20px;
+    font-family: 'roboto', sans-serif;
+}
+.hero{
+    /* border: 1px solid #000; */
+    background-image: url('https://hostelpass.co/wp-content/uploads/elementor/thumbs/travelling-alone-pkk8qzpwfmfwd2q0e6byxtumvlipwuuwz3zpm8w4s4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 100px;
+}
+.hero p{
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+.hero h1{
+    font-size: 2rem;
+    color: white;
+    z-index: 1;
+}
+.hBtn{
+    /* background: none; */
+    z-index: 1;
+    background-color: #EFB036;
+    padding: 5px 15px;
+    color: rgb(0, 0, 0);
+    border: none;
+    font-size: 16px;
+    border-radius: 10px;
+    margin: 5px;
+}
+.hBtn:hover{
+    background-color: #FFC107;
+    /* position: absolute; */
+}
+.overlay{
+    position: absolute;
+    background-color: rgba(0,0,0,0.4);
+    height: 100vh;
+    width: 100vw;
+}
