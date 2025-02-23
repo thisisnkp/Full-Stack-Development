@@ -51,3 +51,50 @@ Styling Body And Creating Default Design
     height: 100vh;
     width: 100vw;
 }
+
+/* Style for services section */
+.service{
+    text-align: center;
+    padding: 2rem;
+}
+.heading-serv{
+    font-size: 3rem;
+    margin-top: 3rem;
+}
+.serveP{
+    padding: 0 5rem;
+    margin-bottom: 2rem;
+}
+.serv{
+    display: inline-block;
+    border: 2px solid #d5d5d5;
+    width: 20%;
+    height: 30vh;
+    margin: 0 10px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+    border-radius: 1rem;
+    padding: 1rem;
+}
+.serv:hover{
+    box-shadow: -5px -5px 10px rgba(0,0,0,0.2);
+}
+.serv > span{
+    padding: 15px;
+    border-radius: .8rem;
+}
+.bg-col1{
+    background-color: #ffe0ae;
+    color: #ff9d00;
+}
+.bg-col2{
+    background-color: #c0ffd5;
+    color: #00eb27;
+}
+.bg-col3{
+    background-color: #ffc1c1;
+    color: #ff0000;
+}
+.bg-col4{
+    background-color: #b6aeff;
+    color: #003cff;
+}
