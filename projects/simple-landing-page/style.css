@@ -68,7 +68,7 @@ Styling Body And Creating Default Design
 .serv{
     display: inline-block;
     border: 2px solid #d5d5d5;
-    width: 20%;
+    width: 17%;
     height: 30vh;
     margin: 0 10px;
     box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
@@ -97,4 +97,43 @@ Styling Body And Creating Default Design
 .bg-col4{
     background-color: #b6aeff;
     color: #003cff;
+}
+.serv > button{
+    background-color: #3300ff;
+    color: #fff;
+    padding: 5px 10px;
+    margin: 10px 0;
+    border: 2px solid #b5a2ff;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.serv > button:hover{
+    background-color: #0101be;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+    padding: 8px 14px;
+    font-size: 1.1rem;
+}
+.about{
+    padding: 150px;
+    text-align: center;
+}
+.about-top > h1{
+    font-size: 2rem;
+}
+.about-img > img{
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+}
+.abt{
+    position: relative; 
+    display: inline-block;
+    margin-top: 20px;
+    width: 45%;
+
+}
+.about-content{
+padding: 20px;
+text-align: justify;
+    top: -150px;
 }
