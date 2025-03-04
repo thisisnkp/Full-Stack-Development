@@ -1,0 +1,22 @@
+/* 
+Z-index: Z-index property in css is used to stack elements on top of each other. It is used to determine the order of elements
+z-index: decimal value;
+*/
+
+.pos{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+}
+.pos-1{
+    background-color: red;
+    z-index: 1;
+}
+.pos-2{
+    background-color: green;
+    z-index: 7;
+}
+.pos-3{ 
+    background-color: blue;
+    z-index: 6;
+}

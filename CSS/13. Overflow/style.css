@@ -1,0 +1,28 @@
+/* 
+Overflow: Overflow occurs when the content of an element is larger than its space.
+
+There two 2 direction of overflow
+Horizontal Overflow: When the content of an element is larger than its width.
+keyword: overflow-x
+
+Vertical Overflow: When the content of an element is larger than its height.
+keyword: overflow-y
+
+Combine Property: overflow
+
+values: visible, hidden, scroll, auto, clip, none
+*/
+
+.overflow{
+    height: 250px;
+    width: 50vw;
+    border: 2px solid black;
+    overflow: auto
+}
+.overflow-xy{
+    height: 250px;
+    width: 50vw;
+    border: 2px solid black;
+    overflow-x: hidden
+    ;
+}
