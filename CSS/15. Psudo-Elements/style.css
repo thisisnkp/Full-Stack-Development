@@ -8,6 +8,36 @@ There are 6 Types of Pseudo-Elements:
 4. ::first-line
 5. ::marker
 6. ::placeholder
-7. ::Selector
+7. ::Selection
 */
+.before > h1::before{
+    content: "Hello";
+    color: purple;
+}
+.after >h1::after{
+    content: "World";
+    color: blue;
+}
 
+.first-letter::first-letter{
+    color: red;
+    font-size: 2rem;
+}
+
+.first-line::first-line{
+    color: red;
+}
+
+.placeholder::placeholder{
+    color: red;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.selection::selection{
+    background-color: rgb(255, 0, 0);
+    color: rgb(255, 87, 87);
+}
+
+li::marker{
+    color: red;
+}

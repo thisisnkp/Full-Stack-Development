@@ -1,0 +1,21 @@
+/* 
+Psudo Classes: In css , we can create pseudo classes to select elements based on certain conditions or States.
+Examples:
+1. :link - Selects all links on a webpage.
+2. :visited - Selects all links that have been visited.
+3. :hover - Selects an element when the user hovers over it.
+4. :active - Selects an element when it is being clicked.
+5. :focus - Selects an element when it receives focus (e.g., when a user
+6. :first-child - Selects the first child element of a specified element.
+7. :last-child - Selects the last child element of a specified element.
+8. :nth-child - Selects every nth child element of a specified element.
+9. :nth-last-child - Selects every nth child element of a specified element from the
+10. :first-of-type - Selects the first element of a specified type.
+11. :last-of-type - Selects the last element of a specified type.
+12. :nth-of-type - Selects every nth element of a specified type.
+13. :nth-last-of-type - Selects every nth element of a specified type from the
+
+*/
+#txt:focus{
+    border: 5px solid blue;
+}
