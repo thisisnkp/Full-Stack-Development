@@ -41,3 +41,50 @@ ul li:first-child{
 .div1 p:last-child{
     color: blue;
 }
+
+/* nth child */
+ul li:nth-child(9){
+    color: green;
+}
+
+.div1 p:nth-child(3){
+    color: green;
+}
+/* 
+nth-last-child
+*/
+ul li:nth-last-child(2){
+    color: white;
+    background-color: red;
+    border-radius: 18px;
+    display: inline-block;
+    padding: 5px 20px;
+}
+
+/* 
+first-of-type
+*/
+.div1 p:first-of-type{
+    color: rgb(107, 3, 253);
+}
+
+/* 
+last-of-type
+*/
+.div1 p:last-of-type{
+    color: rgb(3, 253, 3);
+}
+
+/* 
+nth-of-type
+*/
+
+.div1 p:nth-of-type(3){
+    color: rgb(253, 3, 3);
+}
+/* 
+nth-last-of-type
+*/
+.div1 p:nth-last-of-type(2){
+    color: rgb(95, 3, 253);
+}
