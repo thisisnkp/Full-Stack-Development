@@ -19,3 +19,25 @@ Examples:
 #txt:focus{
     border: 5px solid blue;
 }
+#txt{
+    color: red
+}
+
+/* First Child */
+.div1 p:first-child{
+    color: red;
+}
+ul li:first-child{
+    color: red;
+    display: inline-block;
+    list-style: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+}
+/* Last Child */
+.div1 p:last-child{
+    color: blue;
+}
