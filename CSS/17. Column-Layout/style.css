@@ -1,0 +1,59 @@
+/* 
+Column Layout: Css provide a verticle way of creating column baised layouts using the column properties.
+================
+1] column-count: To specify the number of columns to display.
+2] column-gap: To specify the gap between columns.
+3] column-rule: To specify the border between columns.
+4] column-fill: To specify how to fill the columns.
+5] column-rule-style: To specify the style of the column rule.
+6] column-rule-color: To specify the color of the column rule.
+7] column-rule-width: To specify the width of the column rule.
+8] column-span: To specify the number of columns a content should span.
+*/
+/* Example of column layout */
+/* 1] column-count */
+.column-count{
+    column-count: 4;text-align: justify;
+}
+
+/* column-rule */
+.column-count{
+    column-rule: 4px solid black;
+    /*          width  style   color */
+}
+/* 
+Individual Properties
+
+column-role-style
+*/
+.column-count{
+    column-rule-style: inset; /* dashed, solid, double, groove, ridge, inset, outset */
+}
+
+/* 
+column-rule-width
+*/
+.column-count{
+    column-rule-width: 20px;
+}
+
+/* column-rule-color */
+.column-count{
+    column-rule-color: brown;
+}
+
+/* column-gap */
+
+.column-count{
+    column-gap: 30px;
+}
+
+/* column-span */
+.text-container{
+    column-count: 3;
+    text-align: justify;
+}
+.header{
+    column-span: all; /* none , all */
+    column-fill: auto; /* balance, auto */
+}
