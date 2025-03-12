@@ -1,0 +1,61 @@
+/* 
+Flexbox
+======================
+Flexbox is a powerfull layout model that allows you to create complex layouts with ease. It's a game-changer for responsive design.
+It allows to flow either row or column
+
+Default Direction: row
+                Verticle(y) axis: Cross Axis
+                Horizontal(x) axis: Main Axis
+Direction: column
+                Verticle axis: Main Axis
+                Horizontal axis: Cross Axis
+
+-----------------------------------------------------
+justify-content: it positioned the items along the main axis
+        values: flex-start, center, flex-end, space-between, space-around, space-evenly
+align-items: it positioned the items along the cross axis
+*/
+*{
+    margin: 0;
+    padding: 0;
+}
+.flexbox{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    border: 1px solid black;
+    height: 100vh;
+}
+.flexbox div:nth-child(1){
+     /* width: 50%;  */
+    margin: 10px;
+}
+.flexbox div:nth-child(2){
+    /* width: 50%; */
+    margin: 10px;
+}
+.flexbox div:nth-child(3){
+    /* width: 50%; */
+    margin: 10px;
+}
+.flexbox div:nth-child(4){
+    /* width: 50%; */
+    margin: 10px;
+}
+.flexbox div:nth-child(5){
+    /* width: 50%; */
+    margin: 10px;
+}
+.flexbox .child2:nth-child(2){
+    /* width: 50%; */
+}
+.flexbox .child1{
+    border: 1px solid black;
+    padding: 10px;
+}
+.flexbox .child2{
+    border: 1px solid black;
+    padding: 10px;
+}
