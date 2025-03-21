@@ -14,7 +14,54 @@ Direction: column
 -----------------------------------------------------
 justify-content: it positioned the items along the main axis
         values: flex-start, center, flex-end, space-between, space-around, space-evenly
+        default: flex-start
 align-items: it positioned the items along the cross axis
+        default: stretch
+
+flex-direction: it changes the direction of the main axis
+        values: row, row-reverse, column, column-reverse
+        default: row
+
+flex-wrap: it allows the items to wrap if they don't fit in the container
+        values: nowrap, wrap, wrap-reverse
+        default: nowrap
+
+align-content: it aligns the flex lines when there is extra space in the cross axis
+        values: flex-start, center, flex-end, space-between, space-around, space-evenly
+        default: stretch
+
+gap: it defines the space between the flex items
+        values: <length>, <percentage>
+
+        ================================================
+         These properties will be applied on flex items
+        ================================================
+align-self: it allows the default alignment to be overridden for individual flex items along cross axis.
+        Align self will not work if the parent container is not a flex container or has a flex property set to flex-wrap
+
+        values: auto, flex-start, center, flex-end, baseline, stretch
+        default: auto
+
+order: it allows you to change the order of the flex items
+        values: <integer>
+        default: 0
+
+flex-grow: it defines the ability for a flex item to grow if necessary
+        values: <number>
+        default: 0
+flex-shrink: it defines the ability for a flex item to shrink if necessary
+        values: <number>
+        default: 1
+flex-basis: it defines the default size of an element before the remaining space is distributed
+
+        values: <length>, <percentage>, auto
+        default: auto
+
+flex: it is a shorthand for flex-grow, flex-shrink, and flex-basis properties
+        values: none, initial, auto, <number>, <length>, <percentage>
+        default: 0 1 auto
+
+        flex: 1, 2, 300px;
 */
 *{
         margin: 0;
@@ -45,15 +92,43 @@ body{
         background: linear-gradient(to right, #514a9d, #24c6dc);
         color: #fff;
         display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
+        /* flex-direction: column; */
+        justify-content: center;
         align-items: center;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        gap: 10px;
 }
 .item{
-        font-size: 20px;
+        /* margin: 10px; */
+        font-size: 28px;
         border: solid 1px #1e1403;
-        width: 100px;
+        /* flex-grow: 1; */
+        /* width: 100px; */
+        text-align: center;
         height: 100px;
         background: rgb(34,193,195);
         background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+}
+.item1{
+        align-self: center;
+        /* order: 1; */
+        flex-grow: 3;
+        flex-shrink: 3;
+        flex-basis: 200px;
+}
+.item2{
+        /* align-self: flex-end; */
+        /* order: 1; */
+        flex-grow: 2;
+}
+.item3{
+        /* align-self: flex-end; */
+        /* order: 3; */
+        flex-grow: 1;
+}
+.item4{
+        /* align-self: flex-end; */
+        /* order: 3; */
+        flex-grow: 1;
 }
