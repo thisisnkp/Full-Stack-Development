@@ -1,0 +1,59 @@
+/* 
+Question:
+ Create 5 divs and place them in the following positions:
+    1. Top left corner
+    2. Top right corner
+    3. Bottom left corner
+    4. Bottom right corner
+    5. Center of the page
+*/
+
+/* 
+Solution: 
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    flex-direction: column;
+}
+.container{
+    position: relative;
+    width: 90vh;
+    height: 90vh;
+    background-color: #ddd;
+}
+.box{
+    height: 100px;
+    width: 100px;
+    background-color: #f00;
+    position: absolute;
+}
+.top-left{
+    top: 0;
+    left: 0;
+}
+.top-right{
+    top: 0;
+    right: 0;
+}
+.bottom-left{
+    bottom: 0;
+    left: 0;
+}
+.bottom-right{
+    bottom: 0;
+    right: 0;
+}
+.center{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
