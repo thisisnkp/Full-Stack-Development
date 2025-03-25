@@ -4,42 +4,200 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /*
+        Embaded style
+        */
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: "Inter", sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        /* Common classes  */
+        .bg-primary{
+            background-color: #2A004E;
+        }
+        .bg-primary:hover{
+            background-color: #500073;
+        }
+        .primary{
+            color: #2A004E;
+        }
+        .primary:hover{
+            color: #500073;
+        }
+        .secondary{
+            color: #C62300;
+        }
+        .bg-secondary{
+            background-color: #C62300;
+        }
+        .secondary:hover{
+            color: #F14A00;
+        }
+        .fs-3{
+            font-size: 3.5rem;
+        }
+        .fs-2{
+            font-size: 2rem;
+        }
+        .btn{
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.3rem;
+            font-weight: 500;
+        }
+        .txt-center{
+            text-align: center;
+        }
+        .d-flex{
+            display: flex;
+        }
+/* --------------------------------------- */
+        /* Header Design */
+        header{
+            background-color: #2A004E;
+            color: #fff;
+            padding: 10px;
+        }
+        .nav-container{
+            justify-content: space-between;
+            align-items: center;
+
+            /* padding: 10px 0; */
+            /* max-width: 1200px; */
+        }
+        ul{
+            display: flex;
+            list-style: none;
+            gap: 20px;
+            align-items: center;
+        }
+        ul > li > a{
+            color: #fff;
+            text-decoration: none;
+        }
+        ul > li > a:hover{
+            color: #ff0066;
+        }
+
+        /* Design hero Section */
+        .overlay{
+            height: 100vh;
+            width: 100%;
+            border: 1px solid #131313;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #131313;
+        }
+        .hero{
+            background-color: #333;
+            color: #fff;
+            padding: 0;
+            text-align: center;
+            height: 100vh;
+            position: relative;
+
+            background-image: url('https://img.freepik.com/free-photo/woman-talking-boss-video-call-communication-marketing-strategy-corporate-office-entrepreneur-using-online-conference-business-meeting-computer-with-work-manager_482257-39875.jpg?ga=GA1.1.1399898220.1742828121&semt=ais_hybrid');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            align-items: center;
+        }
+        .hero-container{
+            position: relative;
+            z-index: 2;
+        }
+        
+        .hero-container > p{
+            line-height: 2.2rem;
+        }
+        .hero-container > button{
+            margin-top: 20px;
+        }
+        /* Services Section */
+        .services-container{
+            justify-content: space-between;
+            max-width: 1200px;
+            width: 100%;
+            border: 1px solid #131313;
+            margin-top: 20px;
+        }
+        .services{
+            align-items: center;
+            flex-direction: column;
+            padding: 40px;
+        }
+        .services-child{
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
 </head>
 <body>
-    <!-- Navigation -->
-     <nav>
-        <div>
+    <!-- Basic Structure -->
+     <!-- Header -->
+        <header>
+            <nav>
+                <div class="nav-container d-flex">
+                    <h1><i class="fa-solid fa-globe"></i>&nbsp;Layout</h1>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>  
+        </header>
 
-        </div>
-        <div>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </div>
-     </nav>
-     <!-- Hero Section -->
-      <section>
-          <div>
-            <h1></h1>
-            <p></p>
-        </div>
-      </section>
-      <!-- Services section -->
-       <section>
-        <div>
-            <h2></h2>
-            <p></p>
-        </div>
-        <div>
-            <h2></h2>
-            <p></p>
-        </div>
-        <div>
-            <h2></h2>
-            <p></p>
-        </div>
-       </section>
+        <!-- Hero Section -->
+         <section class="hero d-flex">
+            <div class="overlay">
+                <!-- Overlay -->
+            </div>
+            <div class="hero-container">
+                <h2 class="fs-3" style="text-transform: uppercase;">Explore the my world</h2>
+                <p class="fs-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum veniam quam saepe, facere delectus architecto labore soluta! Animi dolorem totam odio magnam dolor, sunt dolores adipisci cum officia amet. Veritatis.</p>
+                <button class="btn bg-primary secondary">Explore Now <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+         </section>
+
+         <!-- Services Section -->
+          <section class="services txt-center d-flex">
+              <h2 class="fs-2">Our Services</h2>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat, ad deleniti? Exercitationem culpa illum temporibus dolor, nisi beatae eos ullam, quidem facilis a ad dolores! Fugit deserunt pariatur minima ea.</p>
+              <div class="container txt-center d-flex services-container">
+                <div class="service1">
+                   <div class="container d-flex services-child">
+                        <div style="padding: 15px; height: 60px; width: 60px; background-color: #beacdf; border-radius: 10px;" class=""><i class="fa-solid fa-globe fs-2"></i></div>
+                        <h3>Web Development</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur reiciendis consequatur molestiae unde, est iusto corporis laudantium saepe maxime ex esse? Eligendi, provident reiciendis.</p>
+                        <button class="btn bg-secondary primary">Read More</button>
+                   </div>
+                </div>
+                <div class="service2">
+service2
+                </div>
+                <div class="service3">
+service3    
+                </div>
+            </div>
+          </section>
 </body>
 </html>

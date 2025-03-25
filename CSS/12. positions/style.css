@@ -7,6 +7,7 @@ Top, Bottom, Left, Right properties have no effect on static positioned elements
 Top, Bottom, Left, Right properties can be used to move the element in any direction.
 
 3. Absolute: element is positioned relative to its nearest positioned ancestor. If an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling.
+make parent element position relative to make child element position absolute.
 
 4. Fixed: element is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled.
 
