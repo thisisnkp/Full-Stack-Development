@@ -1,0 +1,166 @@
+  /*
+        Embaded style
+        */
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: "Inter", sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        /* Common classes  */
+        .bg-primary{
+            background-color: #2A004E;
+        }
+        .bg-primary:hover{
+            background-color: #500073;
+        }
+        .primary{
+            color: #2A004E;
+        }
+        .primary:hover{
+            color: #500073;
+        }
+        .secondary{
+            color: #C62300;
+        }
+        .bg-secondary{
+            background-color: #C62300;
+        }
+        .secondary:hover{
+            color: #F14A00;
+        }
+        .fs-3{
+            font-size: 3.5rem;
+        }
+        .fs-2{
+            font-size: 2rem;
+        }
+        .btn{
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.3rem;
+            font-weight: 500;
+        }
+        .txt-center{
+            text-align: center;
+        }
+        .d-flex{
+            display: flex;
+        }
+        .justify-center{
+            justify-content: center;
+        }
+        .justify-between{
+            justify-content: space-between;
+        }
+        .justify-around{
+            justify-content: space-around;
+        }
+        .align-center{
+            align-items: center;
+        }
+        .align-between{
+            align-items: space-between;
+        }
+        .flex-column{
+            flex-direction: column;
+        }
+/* --------------------------------------- */
+        /* Header Design */
+        header{
+            background-color: #2A004E;
+            color: #fff;
+            padding: 10px;
+        }
+        .nav-container{
+            justify-content: space-between;
+            align-items: center;
+
+            /* padding: 10px 0; */
+            /* max-width: 1200px; */
+        }
+        ul{
+            display: flex;
+            list-style: none;
+            gap: 20px;
+            align-items: center;
+        }
+        ul > li > a{
+            color: #fff;
+            text-decoration: none;
+        }
+        ul > li > a:hover{
+            color: #ff0066;
+        }
+
+        /* Design hero Section */
+        .overlay{
+            height: 100vh;
+            width: 100%;
+            border: 1px solid #131313;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #131313;
+        }
+        .hero{
+            background-color: #333;
+            color: #fff;
+            padding: 0;
+            text-align: center;
+            height: 100vh;
+            position: relative;
+
+            background-image: url('https://img.freepik.com/free-photo/woman-talking-boss-video-call-communication-marketing-strategy-corporate-office-entrepreneur-using-online-conference-business-meeting-computer-with-work-manager_482257-39875.jpg?ga=GA1.1.1399898220.1742828121&semt=ais_hybrid');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            align-items: center;
+        }
+        .hero-container{
+            position: relative;
+            z-index: 2;
+        }
+        
+        .hero-container > p{
+            line-height: 2.2rem;
+        }
+        .hero-container > button{
+            margin-top: 20px;
+        }
+        /* Services Section */
+        .services-container{
+            justify-content: space-between;
+            max-width: 1200px;
+            width: 100%;
+            margin-top: 20px;
+        }
+        .services{
+            align-items: center;
+            flex-direction: column;
+            padding: 40px;
+        }
+        .services-child{
+            flex-direction: column;
+            align-items: center;
+        }
+        .service{
+            border: 1px solid #a2a2a2;
+            width: 30%;
+            height:500px;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: -15px -15px 20px rgba(0, 0, 0, 0.5);
+        }
+        .service:hover{
+            box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.5);
+        }
