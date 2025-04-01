@@ -37,13 +37,13 @@ p{
     /* right: 100px; */
     background-color: blueviolet;
 }
-.absolute{
+/* .absolute{
     position: absolute;
     top: 100px;
     left: 100px;    
     right: 100px;
     background-color: rgb(255, 0, 0);
-}
+} */
 
 .fixed{
     position: fixed;
