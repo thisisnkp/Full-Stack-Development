@@ -1,0 +1,78 @@
+/* 
+Grid Layout
+-----------------------------------------
+The CSS Grid Layout is a two-dimensional layout system for the web. It allows you to create complex layouts using rows and columns, making it easier to design responsive web pages.
+It provides a grid-based approach to layout, where you can define grid containers and place items within them using grid lines, areas, and tracks. This makes it a powerful tool for creating flexible and adaptive designs that can adjust to different screen sizes and orientations.
+
+Basic Terminology:
+- Grid Container: The parent element that holds the grid items. It is defined using the `display: grid;` property.
+- Grid Item: The child elements within the grid container. These are the elements that will be arranged in the grid layout.
+
+- Grid Line: The lines that separate the grid items. They can be either horizontal or vertical.
+Grifd Track: The space between two grid lines. It can be a row or a column.
+- Grid Cell: The smallest unit of the grid, formed by the intersection of a row and a column.
+------------------------------------------------------------
+
+properties of grid layout:
+- display: grid; - Defines the element as a grid container.
+- grid-template-columns: Defines the number and size of columns in the grid.
+- grid-template-rows: Defines the number and size of rows in the grid.
+- grid-column: Specifies how many columns an item should span.
+- grid-row: Specifies how many rows an item should span.
+- grid-area: Specifies the area of the grid that an item should occupy.
+- grid-gap: Defines the space between grid items.
+- gap: A shorthand for grid-row-gap and grid-column-gap.
+- gird-row-gap: Defines the space between rows in the grid.
+- grid-column-gap: Defines the space between columns in the grid.
+- justify-items: Aligns grid items along the row axis (horizontally).
+- align-items: Aligns grid items along the column axis (vertically).
+- grid-template-areas: Defines a grid template by referencing the names of the grid items.
+- grid-auto-flow: Controls how the auto-placement algorithm works.
+- grid-auto-columns: Defines the size of implicitly created columns.
+- grid-auto-rows: Defines the size of implicitly created rows.
+- justify-content: Aligns the grid container's content along the row axis (horizontally).
+- align-content: Aligns the grid container's content along the column axis (vertically).
+
+---------------------------------------------------------------------------
+
+Grid Item Properties:
+- gird-column: Specifies the starting and ending column of a grid item.
+- grid-row: Specifies the starting and ending row of a grid item.
+- grid-area: Specifies the area of the grid that an item should occupy.
+- justify-self: Aligns a grid item along the row axis (horizontally).
+- align-self: Aligns a grid item along the column axis (vertically).
+
+*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* CSS Grid Layout Example */
+.grid-container{
+    display: grid;
+    /* width: 1000px; */
+    grid-template-columns: 400px 1fr 1fr;  /* 3 columns of equal width */
+    grid-template-rows: 1fr 100px; /* 3 rows of equal height */
+    /* 
+    meaning of fr: 1fr = 1 fraction of the available space
+    1fr+2fr+2fr+1fr = 6fr = Total size of grid container = 1000px
+    1fr = 1000px/6 = 166.67px
+    2fr = 2*166.67px = 333.33px
+
+    total widhth of grid container - fiexd width of columns = 1536 - 700 = 836px
+    1136px/2 = 568px
+    1fr = 568px
+
+}
+.item{
+    border: 1px solid #ccc;
+}
