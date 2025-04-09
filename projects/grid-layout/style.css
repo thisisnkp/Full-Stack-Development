@@ -1,0 +1,48 @@
+/* Font */
+@font-face {
+  font-family: 'Neeraj';
+  src: url('./font/BingBamBoum.ttf');
+}
+/* 
+-----------------------------
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f0f0f0;
+    font-family: 'teko', sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+.hero-title h1{
+    font-family: 'Neeraj';
+}
+/* 
+------------------------------
+Dsign
+------------------------------
+*/
+header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px 0;
+}
+ul{
+    display: flex;
+    list-style: none;
+    width: 80vw;
+    justify-content: flex-end;
+}
+ul li{
+    margin: 0 20px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.logo i{
+    font-size: 30px;
+}

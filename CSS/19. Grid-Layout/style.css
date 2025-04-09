@@ -17,9 +17,6 @@ properties of grid layout:
 - display: grid; - Defines the element as a grid container.
 - grid-template-columns: Defines the number and size of columns in the grid.
 - grid-template-rows: Defines the number and size of rows in the grid.
-- grid-column: Specifies how many columns an item should span.
-- grid-row: Specifies how many rows an item should span.
-- grid-area: Specifies the area of the grid that an item should occupy.
 - grid-gap: Defines the space between grid items.
 - gap: A shorthand for grid-row-gap and grid-column-gap.
 - gird-row-gap: Defines the space between rows in the grid.
@@ -60,8 +57,9 @@ body{
 .grid-container{
     display: grid;
     /* width: 1000px; */
-    grid-template-columns: 400px 1fr 1fr;  /* 3 columns of equal width */
-    grid-template-rows: 1fr 100px; /* 3 rows of equal height */
+    /* grid-template-columns: 1fr 1fr 1fr; *//* 3 columns of equal width */
+    grid-template-columns: repeat(3, 1fr);/* repeat(no. of row/column, size of each row/column) */
+    grid-template-rows: repeat(3, 1fr); /* 3 rows of equal height */
     /* 
     meaning of fr: 1fr = 1 fraction of the available space
     1fr+2fr+2fr+1fr = 6fr = Total size of grid container = 1000px
@@ -71,8 +69,27 @@ body{
     total widhth of grid container - fiexd width of columns = 1536 - 700 = 836px
     1136px/2 = 568px
     1fr = 568px
+    */
+
+    /* grid gap */
+    /* grid-gap: 10px; Space between grid items */
+    /* gap: 10px; Shorthand for grid-gap */
+    grid-row-gap: 10px;
+    grid-column-gap: 10px; /* Space between columns */
+    /* gap: 10px; */ /* Shorthand for grid-gap */
+    justify-items: center; 
+    /* Align items horizontally in the grid */
+    height: 100vh;
+    /* Align items vertically in the grid */
+    align-items: center;
 
 }
 .item{
     border: 1px solid #ccc;
+}
+
+/* Grid Column */
+.item1{
+    grid-column: 1 / 2; /* Start at column 1 and end at column 3 */
+    grid-row: 1 / 3; /* Start at column 1 and end at column 3 */
 }
