@@ -1,4 +1,13 @@
-/* Font */
+/* Font 
+
+Main: #f45b69
+Primary: #5A0001
+Secondry: f13030
+Font: #5A0001
+BackGround: #5A0001
+*/
+/* CSS Variables
+ */
 @font-face {
   font-family: 'Neeraj';
   src: url('./font/BingBamBoum.ttf');
@@ -30,6 +39,8 @@ header{
     justify-content: space-evenly;
     align-items: center;
     padding: 20px 0;
+    background-color: #f45b69;
+    color: white;
 }
 ul{
     display: flex;
@@ -38,11 +49,47 @@ ul{
     justify-content: flex-end;
 }
 ul li{
-    margin: 0 20px;
+    margin: 0 20px;  
     font-size: 20px;
     font-weight: 600;
     cursor: pointer;
 }
-.logo i{
+
+.hero{
+    display: flex;
+}
+.hero-title{
+    width: 50vw;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero-title h1{
+    font-size: 60px;
+    color: #22181c;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.hero-title p{
     font-size: 30px;
+    color: #22181c;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.hero-image{
+    width: 50vw;
+    padding: 20px;
+}
+
+.hero-image img{
+    width: 100%;
+}
+.hero-gif1{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 4vh; 
+    left: -90vw;
 }
