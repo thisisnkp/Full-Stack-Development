@@ -130,3 +130,24 @@ ul li{
     height: 200px;
     margin-right: 20px;
 }
+/* Desinging services grid */
+.services-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+}
+.services-grid-item{
+    border: 1px solid #f45b69;
+}
+.services-grid-item > ul{
+    width: 100%;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.services-grid-item > ul > li{
+    margin: 0;
+}
+.services-grid-item > h3,h4,p,ul{
+    text-align: center;
+}
