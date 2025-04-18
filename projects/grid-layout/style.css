@@ -63,6 +63,16 @@ Dsign
     color: rgb(0, 0, 0);
     font-family: 'teko', sans-serif;
 }
+.btn-secondary{
+    background-color: #f45b69!important;
+    color: white;
+    font-family: 'teko', sans-serif;
+}
+.btn-secondary:hover{
+    background-color: #eb0014dd;
+    color: white;
+    font-family: 'teko', sans-serif;
+}
 /* End */
 header{
     display: flex;
@@ -139,6 +149,7 @@ ul li{
 }
 .services-grid-item{
     border: 1px solid #f45b69;
+    text-align: center;
 }
 .services-grid-item > ul{
     width: 100%;
@@ -150,4 +161,22 @@ ul li{
 }
 .services-grid-item > h3,h4,p,ul{
     text-align: center;
+}
+.icon-subclass{
+    height: 50px;
+    width: 50px;
+    border: 2px solid #ff293b81;
+    border-radius: 10px;
+    background-color: #f45b683d;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+.icon-subclass > i{
+    color: #ff0015;
+}
+.icon{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
 }
