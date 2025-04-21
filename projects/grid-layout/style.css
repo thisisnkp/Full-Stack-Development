@@ -64,12 +64,12 @@ Dsign
     font-family: 'teko', sans-serif;
 }
 .btn-secondary{
-    background-color: #f45b69!important;
+    background-color: #f45b69;
     color: white;
     font-family: 'teko', sans-serif;
 }
 .btn-secondary:hover{
-    background-color: #eb0014dd;
+    background-color: #d80012d9;
     color: white;
     font-family: 'teko', sans-serif;
 }
@@ -141,15 +141,34 @@ ul li{
     margin-right: 20px;
 }
 /* Desinging services grid */
+.services{
+    background: hsla(280, 84%, 41%, 1);
+
+background: linear-gradient(90deg, hsla(280, 84%, 41%, 1) 0%, hsla(218, 97%, 56%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(280, 84%, 41%, 1) 0%, hsla(218, 97%, 56%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(280, 84%, 41%, 1) 0%, hsla(218, 97%, 56%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#8711C1", endColorstr="#2472FC", GradientType=1 );
+text-align: center;
+
+}
 .services-grid{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 20px;
+    padding: 20px;
 }
 .services-grid-item{
     border: 1px solid #f45b69;
     text-align: center;
+    background-color: #f0f0f0;
+    height: 500px;
+}
+.pricing{
+    font-size: 2rem;
 }
 .services-grid-item > ul{
     width: 100%;
@@ -162,21 +181,29 @@ ul li{
 .services-grid-item > h3,h4,p,ul{
     text-align: center;
 }
-.icon-subclass{
-    height: 50px;
-    width: 50px;
-    border: 2px solid #ff293b81;
-    border-radius: 10px;
-    background-color: #f45b683d;
-    display: flex;
-    justify-content: center;
-    align-items: center
-}
-.icon-subclass > i{
-    color: #ff0015;
-}
 .icon{
     display: flex;
     justify-content: center;
-    margin: 20px;
+    margin-top: 30px;
+}
+.icon-subclass{
+    border: 2px solid #f45b69;
+    background-color: #f45b6831;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    border-radius: 10px;
+}
+.icon-subclass i{
+    color: #ff1124;
+}
+.note{
+    color: #ff1124;
+    margin: 30px;
+}
+.note > strong{
+    color: black;
 }
