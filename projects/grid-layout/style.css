@@ -207,3 +207,28 @@ text-align: center;
 .note > strong{
     color: black;
 }
+
+.middle-footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.s h3{
+    width: 100%;
+}
+.s ul{
+    flex-direction: column!important;
+    justify-content: flex-start!important;
+    width: 100%;
+}
+.s{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 20px;
+}
+.s4{
+    align-self: flex-start;
+}
