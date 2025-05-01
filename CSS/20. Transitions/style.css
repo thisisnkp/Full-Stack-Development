@@ -1,0 +1,27 @@
+/* 
+Transitions
+-------------------
+CSS transitions allow you to change property values smoothly (over a given duration).
+You can specify the duration, delay, and timing function of the transition.
+Transition: property duration timing-function delay;
+       -Property: the name of the CSS property you want to add an effect to.(e.g color, background-color, width, height, etc.)
+       -Duration: the duration of the effect (in seconds or milliseconds).
+       -Timing function: the speed curve of the transition effect. (linear, ease, ease-in, ease-out, ease-in-out)
+       -Delay: the delay before the transition starts (in seconds or milliseconds).
+
+*/
+.btn{
+    color: white;
+    background-color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+.btn:hover{
+    background-color: #ba0000;
+    color: #667fff;
+    padding: 20px 30px;
+    border: none;
+    border-radius: 10px;
+    transition: all 1s linear;
+}
