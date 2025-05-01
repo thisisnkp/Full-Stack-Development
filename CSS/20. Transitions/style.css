@@ -23,5 +23,5 @@ Transition: property duration timing-function delay;
     padding: 20px 30px;
     border: none;
     border-radius: 10px;
-    transition: all 1s linear;
+    transition: all .3s linear 0s;
 }
