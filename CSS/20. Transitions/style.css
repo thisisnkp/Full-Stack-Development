@@ -15,13 +15,14 @@ Transition: property duration timing-function delay;
     background-color: black;
     padding: 10px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 0px;
+    transition: all .5s linear 0s;
 }
 .btn:hover{
     background-color: #ba0000;
-    color: #667fff;
+    color: #01ff38;
     padding: 20px 30px;
     border: none;
     border-radius: 10px;
-    transition: all .3s linear 0s;
+    transition: all .5s linear 0s;
 }

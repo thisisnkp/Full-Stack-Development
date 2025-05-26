@@ -1,0 +1,39 @@
+/* Iniitials */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: #67ff3c;
+    font-size: 16px;
+}
+
+/* Body */
+body {
+    background-color: #000;
+    color: #67ff3c;
+    line-height: 1.5;
+    
+}
+/* 
+Omini Classes
+*/
+.d-flex {
+    display: flex;
+}
+.d-flex-col{
+    flex-direction: column;
+}
+.justify-center {
+    justify-content: center;
+}
+.align-center {
+    align-items: center;
+}   
+
+
+/* transitions-box */
+.transitions-box {
+    height: 100vh;
+    border: 3px solid #67ff3c;
+}
