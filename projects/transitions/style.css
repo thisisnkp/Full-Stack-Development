@@ -6,6 +6,11 @@
     font-family: 'Arial', sans-serif;
     color: #67ff3c;
     font-size: 16px;
+    font-family: 'Teko', sans-serif;
+}
+h1,p{
+    margin: 0;
+    padding: 0;
 }
 
 /* Body */
@@ -30,10 +35,70 @@ Omini Classes
 .align-center {
     align-items: center;
 }   
-
+.text-center {
+    text-align: center;
+}
 
 /* transitions-box */
 .transitions-box {
     height: 100vh;
-    border: 3px solid #67ff3c;
+    border: 3px solid #ff3c76;
+    margin: 1rem;
+    overflow-y: auto;
+    padding: 50px 0;
+    position: relative;
+    white-space: nowrap;
+}
+.transitions-box > div{
+    position: relative;
+    top: 190px;
+}
+
+.transition-effect h1{
+    font-size: 4rem;
+    margin-top: 20px;
+
+}
+.transition-effect p {
+    font-size: 2rem;
+    margin-top: 10px;
+}
+.trans-deg h2{
+    font-size: 2rem;
+}
+.transition{
+    border: 2px solid #b13cff;
+    width: 90vw;
+    border-radius: 35px ;
+}
+.margin-class {
+    margin-top: 500px;
+}
+.ball{
+    background: #3494E6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #EC6EAD, #3494E6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #EC6EAD, #3494E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    height: 50px;
+    width: 50px;
+    border-radius: 50%; 
+    margin: 10px;
+}
+
+/* Transitions */
+.LinearTransition > .transition > .ball:hover{
+    background: #67B26F;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #4ca2cd, #67B26F);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #4ca2cd, #67B26F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    transition: all 2s linear;
+    transform: translateX(85vw);
+}
+.EaseInTransition > .transition > .ball:hover{
+    background: #67B26F;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #4ca2cd, #67B26F);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #4ca2cd, #67B26F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    transition: all 2s ease-in;
+    transform: translateX(85vw);
 }
